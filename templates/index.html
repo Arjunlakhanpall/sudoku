@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sudoku Web App</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <h1>🧩 Sudoku Web App</h1>
+  <p>Use `/new` to get a Sudoku puzzle and `/solve` to solve it.</p>
+
+  <p><b>Try it with Postman or cURL:</b></p>
+  <ul>
+    <li>GET <code>/new</code></li>
+    <li>POST <code>/solve</code> with JSON body</li>
+  </ul>
+</body>
+</html>
