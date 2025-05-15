@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sudoku Solution</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Sudoku Solution</h1>
+    {% if board %}
+    <table>
+        {% for row in board %}
+        <tr>
+            {% for num in row %}
+            <td>{{ num }}</td>
+            {% endfor %}
+        </tr>
+        {% endfor %}
+    </table>
+    {% else %}
+    <p>{{ error }}</p>
+    {% endif %}
+    <a href="{{ url_for('index') }}">Try Another</a>
+</body>
+</html>
