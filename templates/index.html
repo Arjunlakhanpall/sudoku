@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sudoku Solver</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Sudoku Solver</h1>
+    <form method="POST">
+        <table>
+            {% for i in range(9) %}
+            <tr>
+                {% for j in range(9) %}
+                <td>
+                    <input type="text" name="cell-{{i}}-{{j}}" maxlength="1" size="1" value="{{ board[i][j] if board[i][j] != 0 else '' }}">
+                </td>
+                {% endfor %}
+            </tr>
+            {% endfor %}
+        </table>
+        <button type="submit">Solve</button>
+    </form>
+</body>
+</html>
