@@ -1,7 +1,9 @@
 # Sudoku Game
 
 Welcome to the online Sudoku game! This project provides a classic Sudoku puzzle experience directly in your browser. Play, challenge yourself, and improve your logic skills at:  
-**[https://sudoku-1-eesc.onrender.com/](https://sudoku-1-eesc.onrender.com/)**
+<a href="https://sudoku-1-eesc.onrender.com/" target="_blank" rel="noopener">
+  <img src="/path/to/logo.png" alt="Sudoku Logo" style={{height: '50px', cursor: 'pointer'}} />
+</a>
 
 ---
 
